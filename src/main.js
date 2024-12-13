@@ -10,18 +10,22 @@ const store = {
 };
 
 function fruitReducer(action) {
-switch (action) {
-  case "BUY_FRUIT" :
-    store.noOfFruits = store.noOfFruits - 1;
-    break;
+  switch (action) {
+    case "BUY_FRUIT":
+      store.noOfFruits = store.noOfFruits - 1;
+      break;
+    case "REPLACE_FRUIT":
     default:
-    break;
-}
+      break;
+  }
 }
 
 console.log(store);
 //console.log("BUY_FRUIT");
 
 store.noOfFruits = store.noOfFruits - 1;
-fruitReducer ("BUY_FRUIT");
+fruitReducer("BUY_FRUIT");
+console.log(store);
+
+fruitReducer("BUY_FRUIT");
 console.log(store);
