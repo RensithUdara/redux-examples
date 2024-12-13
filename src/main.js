@@ -10,3 +10,7 @@ const store = {
 };
 
 console.log(store);
+console.log("BUY_FRUIT");
+
+store.noOfFruits = store.noOfFruits - 1;
+console.log(store);
