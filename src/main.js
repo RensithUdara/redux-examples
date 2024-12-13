@@ -1,6 +1,7 @@
 // Keels Super
 
 const store = {
+  
   noOfFruits: 5,
   noOfPharmacyItems: 10,
 
